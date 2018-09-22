@@ -34,6 +34,10 @@ void f2(char *input){
 	}
 }
 
+int q2(int input){
+	return input - (input / 3) - (input / 5) + (input / 15) * 2;
+}
+
 int main(int argc, char *argv[]){
 	char t1[100] = "abcdefg";
 	printf("t1 = %s\n", t1);
@@ -44,6 +48,12 @@ int main(int argc, char *argv[]){
 	printf("t2 = %s\n", t2);
 	f2(t2);
 	printf("t2 = %s\n", t2);
+
+
+	printf("Q2(15) = %d\n", q2(15) );
+	printf("Q2(20) = %d\n", q2(20) );
+
+
 
 	return 0;
 }
